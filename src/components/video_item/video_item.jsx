@@ -1,7 +1,16 @@
 import React from 'react';
+import styles from './video_item.module.css';
 
-const VideoItem = (props) => ( // props를 받아오고
-    <h1>{props.video.snippet.title}</h1>  // props에 전달된 video의 snippet 안의 title을 h1 태그로 출력
+const VideoItem = ({video: {snippet}}) => ( // props로 video의 snippet을 받아오고
+    <li className={styles.container}>
+        <div className={styles.video}>
+            <img className={styles.thumbnail} src={snippet.thumbnails.medium.url} alt="video thumbnail" />
+            <div className={styles.metadata}>
+                <p className={styles.title}>{snippet.title}</p>
+                <p className={styles.channel}>{snippet.channelTitle}</p>
+            </div>
+        </div>
+    </li>
 );
 
 export default VideoItem;
