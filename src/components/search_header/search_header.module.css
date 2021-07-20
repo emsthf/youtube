@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  height: 4rem;
+  padding: 0.5em 1em;
+  background: rgb(32, 32, 32);
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+}
+
+.input {
+  flex-basis: 100%;
+  font-size: 1.2rem;
+  outline: 0;
+  border: solid 1px rgb(47, 47, 47);
+  background: rgb(18, 18, 18);
+  color: white;
+  padding-left: 0.5em;
+}
+
+.button {
+  background: rgb(49, 49, 49);
+  outline: 0;
+  border: 0;
+  width: 7rem;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.buttonImg {
+  height: 100%;
+  padding: 0.5em 0.2em;
+}
