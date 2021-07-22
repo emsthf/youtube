@@ -9,7 +9,14 @@
 .logo {
   display: flex;
   align-items: center;
-  margin-right: 1em;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.title {
+  margin-left: 0.2em;
 }
 
 .input {
@@ -20,6 +27,7 @@
   background: rgb(18, 18, 18);
   color: white;
   padding-left: 0.5em;
+  margin-left: 1em;
 }
 
 .button {
