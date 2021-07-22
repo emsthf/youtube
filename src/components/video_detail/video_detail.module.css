@@ -1,0 +1,16 @@
+.detail {
+  padding: 0.2em;
+}
+
+.title {
+  color: white;
+}
+
+.channel {
+  color: white;
+}
+
+.description {
+  white-space: pre-wrap;
+  color: white;
+}
