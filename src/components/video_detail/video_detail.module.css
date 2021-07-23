@@ -1,5 +1,9 @@
 .detail {
-  padding: 0.2em;
+  padding-left: 1em;
+}
+
+.video {
+  object-fit: contain;
 }
 
 .title {
@@ -8,9 +12,18 @@
 
 .channel {
   color: white;
+  border-bottom: 2px solid rgb(55, 55, 55);
+  padding-bottom: 1em;
 }
 
 .description {
   white-space: pre-wrap;
   color: white;
+}
+
+@media screen and (max-width: 48rem) {
+  .description {
+    padding-bottom: 1em;
+    border-bottom: 2px solid rgb(55, 55, 55);
+  }
 }

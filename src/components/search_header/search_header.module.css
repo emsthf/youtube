@@ -1,7 +1,7 @@
 .header {
   display: flex;
   height: 4rem;
-  padding: 0.5em 1em;
+  padding: 0.5em 1.4em;
   background: rgb(32, 32, 32);
   color: white;
 }

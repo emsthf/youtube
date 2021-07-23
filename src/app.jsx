@@ -22,6 +22,12 @@ function App({youtube}) {
     youtube.search(query).then(videos => setVideos(videos));
   }, [youtube]);
 
+  const handleTop = useCallback(() => {
+    window.scrollTo({
+      top: 0
+    })}
+  )
+
   useEffect(() => {
     youtube.mostPopular().then(videos => setVideos(videos));
   }, [youtube]);
@@ -33,7 +39,7 @@ function App({youtube}) {
           <VideoDetail video={selectedVideo} />
         </div>}
         <div className={styles.list}>
-          <VideoList videos={videos} onVideoClick={selectVideo} display={selectedVideo? 'list' : 'grid'} />;
+          <VideoList videos={videos} onVideoClick={selectVideo} onClickToTop={handleTop} display={selectedVideo? 'list' : 'grid'} />;
         </div>
       </section>
     </div>

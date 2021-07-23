@@ -2,7 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding-left: 0;
+  padding-left: 1em;
+  padding-right: 1em;
   margin: 0;
   color: white;
+}
+
+@media screen and (max-width: 32rem) {
+  .videos {
+    flex-direction: column;
+  }
 }
